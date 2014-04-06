@@ -9,8 +9,10 @@ gem "lotus-view",       "~> 0.1.0"
 gem "lotus-utils",      "~> 0.1.0"
 
 # Application stack
-gem "yajl-ruby",        "~> 1.2.0"
 gem "dotenv",           "~> 0.10.0"
+gem "patron",           "~> 0.4.18"
+gem "elasticsearch",    "~> 1.0.1"
+gem "oj",               "~> 2.7.1"
 
 group :development do
   gem "shotgun",       "~> 0.9"

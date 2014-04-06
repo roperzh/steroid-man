@@ -1,7 +1,8 @@
-require "json"
+require "oj"
+require "patron"
+require "elasticsearch"
 require "lotus-controller"
 require "lotus-view"
-# require "lotus-utils"
 
 # Require all application files.
 Dir["./app/controllers/**/*.rb"].each  { |rb| require rb }
