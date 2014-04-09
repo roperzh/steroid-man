@@ -1,6 +1,8 @@
 # force test environment
 ENV["RACK_ENV"] = "test"
 
+require File.expand_path(File.join('application'))
+
 require "dotenv"
 Dotenv.load ".env.test", ".env"
 
@@ -20,8 +22,6 @@ require "rack/test"
 require "minitest/autorun"
 require "minitest/unit"
 require "minitest/spec"
-require "mocha/mini_test"
-require "faker"
 
 require "minitest/ansi"
 MiniTest::ANSI.use!
