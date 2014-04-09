@@ -23,7 +23,5 @@ group :test do
   gem "minitest",      "~> 4.7.1"
   gem "minitest-ansi", "~> 0.1.2"
   gem "mocha",         "~> 1.0.0"
-  gem "factory_girl",  "~> 4.4.0"
-  gem "faker",         "~> 1.3.0"
   gem "simplecov",     "~> 0.7.1"
 end

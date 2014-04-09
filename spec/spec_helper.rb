@@ -23,15 +23,6 @@ require "minitest/spec"
 require "mocha/mini_test"
 require "faker"
 
-# enable factory girl syntax methods
-require "factory_girl"
-class MiniTest::Unit::TestCase
-  include FactoryGirl::Syntax::Methods
-end
-
-# require factories
-Dir[File.expand_path(File.join("spec/factories/*.rb"))].each { |rb| require rb }
-
 require "minitest/ansi"
 MiniTest::ANSI.use!
 
