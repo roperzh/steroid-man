@@ -13,6 +13,7 @@ gem "dotenv",           "~> 0.10.0"
 gem "patron",           "~> 0.4.18"
 gem "elasticsearch",    "~> 1.0.1"
 gem "oj",               "~> 2.7.1"
+gem "groff_parser",     "~> 0.1.0"
 
 group :development do
   gem "shotgun",       "~> 0.9"
