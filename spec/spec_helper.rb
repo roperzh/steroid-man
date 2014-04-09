@@ -34,3 +34,5 @@ module MiniTest
     end
   end
 end
+
+require "support/scratch_pad"
