@@ -29,12 +29,22 @@ task "spec:coverage" do
   Rake::Task["spec"].invoke
 end
 
-desc 'Start a console'
+desc "Start a console"
 task :console do
-  ENV['RACK_ENV'] ||= 'development'
+  ENV["RACK_ENV"] ||= "development"
   %w(irb irb/completion).each { |r| require r }
-  require_relative 'application'
+  require_relative "application"
 
   ARGV.clear
   IRB.start
+end
+
+desc "Load man-pages information in the elasticsearch cluster"
+task :populate do
+  require "./application.rb"
+
+  Populator.populate(
+    GroffParser::Engine.new(path: "/usr/share/man/man1"),
+    ManIndexer.new(Elasticsearch::Client.new, "man_pages")
+  )
 end
