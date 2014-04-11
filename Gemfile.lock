@@ -13,7 +13,7 @@ GEM
       multi_json
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    groff_parser (0.1.0)
+    groff_parser (0.3.0)
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -33,7 +33,7 @@ GEM
       minitest (>= 2.5, < 5.0)
     multi_json (1.9.2)
     multipart-post (2.0.0)
-    oj (2.7.1)
+    oj (2.7.2)
     patron (0.4.18)
     puma (2.8.1)
       rack (>= 1.1, < 2.0)
@@ -56,7 +56,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv (~> 0.10.0)
   elasticsearch (~> 1.0.1)
-  groff_parser (~> 0.1.0)
+  groff_parser (~> 0.3.0)
   lotus-controller (~> 0.1.0)
   lotus-router (~> 0.1.0)
   lotus-utils (~> 0.1.0)
