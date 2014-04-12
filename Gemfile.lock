@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/sstephenson/sprockets.git
+  revision: e8583b4ce0174cc1ecee6bc5201a72ed22712779
+  specs:
+    sprockets (2.12.0)
+      hike (~> 2.0)
+      rack (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,6 +22,7 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     groff_parser (0.3.0)
+    hike (2.0.0)
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -46,7 +55,6 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
-    sprockets (1.0.2)
     tilt (2.0.1)
     url_mount (0.2.1)
       rack
@@ -70,4 +78,4 @@ DEPENDENCIES
   rack-test (~> 0.6.2)
   shotgun (~> 0.9)
   simplecov (~> 0.7.1)
-  sprockets (~> 1.0.2)
+  sprockets!
