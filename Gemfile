@@ -6,7 +6,7 @@ gem "puma"
 gem "lotus-router",     "~> 0.1.0"
 gem "lotus-controller", "~> 0.1.0"
 gem "lotus-view",       "~> 0.1.0"
-gem "lotus-utils",      "~> 0.1.0"
+gem "lotus-utils",      "~> 0.1.1"
 
 # Application stack
 gem "dotenv",           "~> 0.10.0"

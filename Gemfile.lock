@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/sstephenson/sprockets.git
-  revision: e8583b4ce0174cc1ecee6bc5201a72ed22712779
+  revision: 1e2c967e5a365c6d10a8964f22c0ab220eaa85b2
   specs:
-    sprockets (2.12.0)
-      hike (~> 2.0)
+    sprockets (2.12.1)
+      hike (~> 2.1)
       rack (~> 1.0)
 
 GEM
@@ -22,7 +22,7 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     groff_parser (0.3.0)
-    hike (2.0.0)
+    hike (2.1.3)
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -32,7 +32,7 @@ GEM
     lotus-router (0.1.0)
       http_router (~> 0)
       lotus-utils (~> 0)
-    lotus-utils (0.1.0)
+    lotus-utils (0.1.1)
     lotus-view (0.1.0)
       lotus-utils (~> 0.1)
       tilt (~> 2.0, >= 2.0.1)
@@ -40,11 +40,11 @@ GEM
     minitest-ansi (0.1.3)
       ansi (~> 1.3)
       minitest (>= 2.5, < 5.0)
-    multi_json (1.9.2)
+    multi_json (1.9.3)
     multipart-post (2.0.0)
-    oj (2.7.2)
+    oj (2.7.3)
     patron (0.4.18)
-    puma (2.8.1)
+    puma (2.8.2)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -68,7 +68,7 @@ DEPENDENCIES
   groff_parser (~> 0.3.0)
   lotus-controller (~> 0.1.0)
   lotus-router (~> 0.1.0)
-  lotus-utils (~> 0.1.0)
+  lotus-utils (~> 0.1.1)
   lotus-view (~> 0.1.0)
   minitest (~> 4.7.1)
   minitest-ansi (~> 0.1.2)
