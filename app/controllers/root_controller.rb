@@ -3,8 +3,7 @@ class RootController
 
   action "Index" do
     def call(env)
-      self.content_type = "application/json"
-      self.body         = Root::Index.render({ format: :json })
+      self.body  = Root::Index.render({ format: :html })
     end
   end
 end
