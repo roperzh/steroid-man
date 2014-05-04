@@ -10,3 +10,5 @@ Dir["./app/controllers/**/*.rb"].each  { |rb| require rb }
 Dir["./app/views/**/*.rb"].each        { |rb| require rb }
 Dir["./app/services/**/*.rb"].each     { |rb| require rb }
 
+Lotus::View.root = 'app/templates'
+Lotus::View.load!
