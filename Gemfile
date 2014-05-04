@@ -14,6 +14,7 @@ gem "patron",           "~> 0.4.18"
 gem "elasticsearch",    "~> 1.0.1"
 gem "oj",               "~> 2.7.1"
 gem "groff_parser",     "~> 0.3.0"
+gem "sass",             "~> 3.3.7"
 gem "sprockets",        github: "sstephenson/sprockets"
 
 group :development do
