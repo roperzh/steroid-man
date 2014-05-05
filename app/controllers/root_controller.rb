@@ -3,7 +3,8 @@ class RootController
 
   action "Index" do
     def call(env)
-      self.body  = Root::Index.render({ format: :html })
+      packages   = ManFinder.new.random
+      self.body  = Root::Index.render(format: :html, packages: packages)
     end
   end
 end

@@ -8,7 +8,16 @@ class ManFinder
   end
 
   def random
-    results = client.search index: "man_pages", body: { query: { query_string: {query: "*:*"} }}
+    results = client.search index: "man_pages",
+      body: {
+        query: {
+          function_score: {
+            query: { match_all: {} },
+            random_score: {}
+          }
+        }
+      }
+
     results["hits"]["hits"]
   end
 end

@@ -1,0 +1,8 @@
+<% packages.each do |package| %>
+  <ul>
+    <li>
+      <p><%= package.get(:name) %></p>
+      <p><%= package.get(:synopsis) %></p>
+    </li>
+  </ul>
+<% end %>
