@@ -29,6 +29,13 @@ GIT
       tilt (~> 2.0, >= 2.0.1)
 
 GIT
+  remote: git://github.com/roperzh/groff_parser.git
+  revision: c9600d2592a879030d7ea934a3abadcc82b1024d
+  branch: master
+  specs:
+    groff_parser (0.4.0)
+
+GIT
   remote: git://github.com/sstephenson/sprockets.git
   revision: 1e2c967e5a365c6d10a8964f22c0ab220eaa85b2
   specs:
@@ -51,7 +58,6 @@ GEM
       multi_json
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    groff_parser (0.3.0)
     hike (2.1.3)
     http_router (0.11.1)
       rack (>= 1.0.0)
@@ -86,7 +92,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv (~> 0.10.0)
   elasticsearch (~> 1.0.1)
-  groff_parser (~> 0.3.0)
+  groff_parser!
   lotus-controller!
   lotus-router!
   lotus-utils!
