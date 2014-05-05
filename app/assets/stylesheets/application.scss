@@ -9,3 +9,10 @@
 @import "base";
 @import "modules";
 @import "states";
+
+.content {
+  position: relative;
+  max-width: 80%;
+  top: 130px;
+  margin: 0px auto;
+}
