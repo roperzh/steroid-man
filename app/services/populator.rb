@@ -30,11 +30,11 @@ class Populator
 
   def self.data_for(document)
     {
-      name:         document.section("NAME"),
-      synopsis:     document.section("SYNOPSIS"),
-      description:  document.section("DESCRIPTION"),
-      examples:     document.section("EXAMPLES"),
-      author:       document.section("AUTHOR"),
+      name:         document.formatted_section("NAME", :utf8),
+      synopsis:     document.formatted_section("SYNOPSIS", :utf8),
+      description:  document.formatted_section("DESCRIPTION", :utf8),
+      examples:     document.formatted_section("EXAMPLES", :utf8),
+      author:       document.formatted_section("AUTHOR", :utf8),
       full_content: document.formatted_content(:utf8)
     }
   end
