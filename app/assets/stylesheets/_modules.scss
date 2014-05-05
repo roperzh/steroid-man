@@ -64,3 +64,17 @@
     outline: none;
   }
 }
+
+.result {
+  height: 90px;
+  border-left: 2px solid #3B4245;
+  padding-left: 15px;
+
+  &:hover {
+    border-color: #D8D8D8;
+  }
+
+  a {
+    color: #DFDFDF;
+  }
+}

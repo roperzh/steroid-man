@@ -1,8 +1,8 @@
-<% packages.each do |package| %>
-  <ul>
-    <li>
-      <p><%= package.get(:name) %></p>
-      <p><%= package.get(:synopsis) %></p>
-    </li>
-  </ul>
-<% end %>
+<ol>
+  <% packages.each do |package| %>
+      <li class="result">
+        <h3><a href="#"><%= package.get(:name) %></a></h3>
+        <p><%= package.get(:synopsis) %></p>
+      </li>
+  <% end %>
+</ol>
