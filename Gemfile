@@ -3,10 +3,10 @@ source "https://rubygems.org"
 gem "puma"
 
 # Lotus stack
-gem "lotus-router",     "~> 0.1.0"
-gem "lotus-controller", "~> 0.1.0"
-gem "lotus-view",       "~> 0.1.0"
-gem "lotus-utils",      "~> 0.1.1"
+gem "lotus-router",     github: 'lotus/router'
+gem "lotus-controller", github: 'lotus/controller'
+gem "lotus-view",       github: 'lotus/view'
+gem "lotus-utils",      github: 'lotus/utils'
 
 # Application stack
 gem "dotenv",           "~> 0.10.0"

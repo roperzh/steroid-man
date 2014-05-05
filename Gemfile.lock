@@ -1,4 +1,34 @@
 GIT
+  remote: git://github.com/lotus/controller.git
+  revision: ae188c7f87f8638e5325ea17dacc04ba5dd5f182
+  specs:
+    lotus-controller (0.1.0)
+      lotus-utils (~> 0.1)
+      rack (~> 1.5)
+
+GIT
+  remote: git://github.com/lotus/router.git
+  revision: 89956e5a4107bf41c974df4f6e6f66ac5e4a6f99
+  specs:
+    lotus-router (0.1.0)
+      http_router (~> 0)
+      lotus-utils (~> 0)
+
+GIT
+  remote: git://github.com/lotus/utils.git
+  revision: a18b574b46fe20d1ee6255d12d658365056fa661
+  specs:
+    lotus-utils (0.1.1)
+
+GIT
+  remote: git://github.com/lotus/view.git
+  revision: 5c97c6c410b43cf446080759e93fb09aa9f760fb
+  specs:
+    lotus-view (0.1.0)
+      lotus-utils (~> 0.1)
+      tilt (~> 2.0, >= 2.0.1)
+
+GIT
   remote: git://github.com/sstephenson/sprockets.git
   revision: 1e2c967e5a365c6d10a8964f22c0ab220eaa85b2
   specs:
@@ -26,16 +56,6 @@ GEM
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
-    lotus-controller (0.1.0)
-      lotus-utils (~> 0.1)
-      rack (~> 1.5)
-    lotus-router (0.1.0)
-      http_router (~> 0)
-      lotus-utils (~> 0)
-    lotus-utils (0.1.1)
-    lotus-view (0.1.0)
-      lotus-utils (~> 0.1)
-      tilt (~> 2.0, >= 2.0.1)
     minitest (4.7.5)
     minitest-ansi (0.1.3)
       ansi (~> 1.3)
@@ -67,10 +87,10 @@ DEPENDENCIES
   dotenv (~> 0.10.0)
   elasticsearch (~> 1.0.1)
   groff_parser (~> 0.3.0)
-  lotus-controller (~> 0.1.0)
-  lotus-router (~> 0.1.0)
-  lotus-utils (~> 0.1.1)
-  lotus-view (~> 0.1.0)
+  lotus-controller!
+  lotus-router!
+  lotus-utils!
+  lotus-view!
   minitest (~> 4.7.1)
   minitest-ansi (~> 0.1.2)
   oj (~> 2.7.1)
