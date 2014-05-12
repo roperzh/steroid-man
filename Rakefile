@@ -46,7 +46,7 @@ task :populate do
   require "./application.rb"
 
   Populator.populate(
-    GroffParser::Engine.new(path: "/usr/share/man/man1"),
+    GroffParser::Engine.new("/usr/share/man/man1"),
     ManIndexer.new(Elasticsearch::Client.new, "man_pages")
   )
 end
