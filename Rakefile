@@ -1,6 +1,8 @@
 require "bundler"
+rack_env = ENV.fetch("RACK_ENV", "development").to_sym
+Bundler.setup(:default, rack_env)
 
-# # ensure our application is in the $LOAD_PATH
+# ensure our application is in the $LOAD_PATH
 libdir = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
 
