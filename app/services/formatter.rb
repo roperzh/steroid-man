@@ -19,7 +19,7 @@ class Formatter
       # replace all non alphanumeric, periods with dash
       ret.gsub! /\s*[^A-Za-z0-9\.]\s*/, "-"
 
-      # replace underscore with dash
+      # replace underscores with dash
       ret.gsub! /[-_]{2,}/, "-"
 
       # convert double dashes to single

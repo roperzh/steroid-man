@@ -1,5 +1,5 @@
 # This class reads the man pages present in the current machine and stores
-# the information about those in elasticsearch
+# the collected information in elasticsearch
 
 class Populator
 

@@ -1,5 +1,5 @@
 # This class aims to be a wrapper between the elasticsearch gem, making
-# some actions a little bit verbose, and avoiding repetition
+# some actions a little bit verbose, and avoid repetition
 
 class ManIndexer
 
@@ -29,8 +29,8 @@ class ManIndexer
     )
   end
 
-  # Sets creates an index with @index_name, and set all the necessary
-  # mappings only if the index does not exist
+  # Creates an index with @index_name, and set the mappings
+  # only if the index does not exist
 
   def prepare
     return if @client.indices.exists index: index_name
