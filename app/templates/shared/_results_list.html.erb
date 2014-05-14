@@ -1,0 +1,8 @@
+<ol id="results-list">
+  <% packages.each do |package| %>
+      <li class="result">
+        <h3><a href=<%= "/man_pages/#{package.get(:slug)}" %>><%= package.get(:name) %></a></h3>
+        <p><%= package.short_description %></p>
+      </li>
+  <% end %>
+</ol>

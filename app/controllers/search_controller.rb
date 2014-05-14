@@ -3,9 +3,8 @@ class SearchController
 
   action "Index" do
     def call(env)
-      results = ManFinder.new.by_name(env[:name])
-      self.content_type = "application/json"
-      self.body         = results.to_json
+      results    = ManFinder.new.by_name(env[:name])
+      self.body  = Search::Results.render(format: :html, packages: results)
     end
   end
 end
