@@ -16,9 +16,10 @@ map "/assets" do
 end
 
 require "./application"
-require 'lotus-router'
+require "lotus-router"
 router = Lotus::Router.new do
-  get  '/', to: "man_pages#index"
+  get  "/", to: "man_pages#index"
+  get "/search", to: "search#index"
   resources :man_pages, only: [:index, :show]
 end
 

@@ -22,16 +22,26 @@ class ManFinder
   end
 
   def by_slug(slug)
-    results = client.search index: "man_pages",
+    results = query_fields(["slug"], slug)
+    results["hits"]["hits"][0]
+  end
+
+  def by_name(name)
+    results = query_fields(["name"], name)
+    results["hits"]["hits"]
+  end
+
+  private
+
+  def query_fields(fields, value)
+    client.search index: "man_pages",
       body: {
         query: {
           query_string: {
-            query: slug,
-            fields: ["slug"]
+            query: value,
+            fields: fields
           }
         }
       }
-
-    results["hits"]["hits"][0]
   end
 end
