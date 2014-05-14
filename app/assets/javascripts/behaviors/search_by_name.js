@@ -9,7 +9,7 @@ SteroidMan.SearchByName = Essential.Behavior.extend({
     SteroidMan.xhr({
       url: "/search?name=" + searchQuery,
       success: function(data) {
-        document.getElementById("results-list").innerHTML = data.response;
+        document.getElementById("main-container").innerHTML = data.response;
       },
       error: function(data) {
         console.log(data);
