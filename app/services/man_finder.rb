@@ -4,7 +4,7 @@ class ManFinder
 
   def initialize(params = {})
     @page = params[:page] || 1
-    @client = Elasticsearch::Client.new
+    @client = Elasticsearch::Client.new(host: ENV["ELASTICSEARCH_URL"])
   end
 
   def random

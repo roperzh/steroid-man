@@ -47,6 +47,6 @@ task :populate do
 
   Populator.populate(
     GroffParser::Engine.new("/usr/share/man/man1"),
-    ManIndexer.new(Elasticsearch::Client.new, "man_pages")
+    ManIndexer.new(Elasticsearch::Client.new(host: ENV["ELASTICSEARCH_URL"]), "man_pages")
   )
 end
