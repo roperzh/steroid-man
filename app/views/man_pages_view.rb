@@ -1,4 +1,4 @@
-module Root
+module ManPages
   class Index
     include Lotus::View
     layout :application
