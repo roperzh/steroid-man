@@ -10,7 +10,8 @@ class ManPagesController
 
   action "Show" do
     def call(env)
-      puts "++++++++++++++++++++++++++ #{env.inspect}"
+      package   = ManFinder.new.by_slug(env[:id])
+      self.body = Root::Show.render(format: :html, package: package)
     end
   end
 end
