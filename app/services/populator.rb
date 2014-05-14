@@ -35,7 +35,8 @@ class Populator
       description:  document.formatted_section("DESCRIPTION", :utf8),
       examples:     document.formatted_section("EXAMPLES", :utf8),
       author:       document.formatted_section("AUTHOR", :utf8),
-      full_content: document.formatted_content(:utf8)
+      full_content: document.formatted_content(:utf8),
+      slug:         Formatter.slugfy(document.formatted_section("NAME", :utf8))
     }
   end
 end

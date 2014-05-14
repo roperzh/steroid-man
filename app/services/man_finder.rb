@@ -20,4 +20,18 @@ class ManFinder
 
     results["hits"]["hits"]
   end
+
+  def by_slug(slug)
+    results = client.search index: "man_pages",
+      body: {
+        query: {
+          query_string: {
+            query: slug,
+            fields: ["slug"]
+          }
+        }
+      }
+
+    results["hits"]["hits"][0]
+  end
 end
