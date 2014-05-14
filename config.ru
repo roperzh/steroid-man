@@ -18,7 +18,8 @@ end
 require "./application"
 require 'lotus-router'
 router = Lotus::Router.new do
-  get  '/', to: "root#index"
+  get  '/', to: "man_pages#index"
+  resources :man_pages, only: [:index, :show]
 end
 
 run router
