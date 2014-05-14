@@ -14,6 +14,6 @@ SteroidMan.SearchByName = Essential.Behavior.extend({
       error: function(data) {
         console.log(data);
       }
-    })
+    });
   }
 });

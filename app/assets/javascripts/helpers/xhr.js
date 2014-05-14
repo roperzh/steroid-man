@@ -5,14 +5,14 @@ SteroidMan.xhr = function(options) {
   var req = new XMLHttpRequest();
 
   var handler = function() {
-    if(req.readyState === 4) {
-      if(req.status === 200) {
+    if (req.readyState === 4) {
+      if (req.status === 200) {
         options.success(req);
       } else {
         options.error(req);
       }
     }
-  }
+  };
 
   req.onreadystatechange = handler;
   req.open(method, url, true);
